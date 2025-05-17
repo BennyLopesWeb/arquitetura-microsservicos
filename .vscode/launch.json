@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServiceApplication<eureka-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.benny.eureka_service.EurekaServiceApplication",
+            "projectName": "eureka-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57135 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ZuulServiceApplication<zuul-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.benny.zuul_service.ZuulServiceApplication",
+            "projectName": "zuul-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62751 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=zuul-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ControleDePessoasApplication<controle-de-pessoas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.benny.controle_de_pessoas.ControleDePessoasApplication",
+            "projectName": "controle-de-pessoas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
