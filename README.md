@@ -60,10 +60,10 @@ gateway-service
 
 🧪 Exemplos de Endpoints (via Gateway)
 Serviço	Rota de exemplo
-Product Service	http://localhost:8080/product-service/products
-Order Service	http://localhost:8080/order-service/orders
+Retorna todas as pessoas	http://localhost:55675/api/pessoas
 
-O gateway escuta na porta 8080.
+
+O gateway escuta na porta 8083.
 
 🔧 Variáveis de Configuração
 As configurações (ex: portas, URLs, nomes dos serviços) são gerenciadas via config-server, que busca os dados de um repositório de configurações (pode ser local ou remoto).
